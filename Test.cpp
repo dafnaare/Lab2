@@ -101,7 +101,7 @@ void mergeSortWrapper(int* arr5, int N) {
 }
 
 
-//Àëãîğèòì áèíàğíîãî ïîèñêà
+//ĞĞ»Ğ³Ğ¾Ñ€Ğ¸Ñ‚Ğ¼ Ğ±Ğ¸Ğ½Ğ°Ñ€Ğ½Ğ¾Ğ³Ğ¾ Ğ¿Ğ¾Ğ¸ÑĞºĞ°
 int binarySearch(int arr1[], int value, int start, int end) {
     if (end >= start) {
         int mid = start + (end - start) / 2;
@@ -120,7 +120,7 @@ int binarySearch(int arr1[], int value, int start, int end) {
     return -1;
 }
 
-//Äëÿ float
+//Ğ”Ğ»Ñ float
 int binarySearch1(int arr1[], float value, int start, int end) {
     if (end >= start) {
         int mid = start + (end - start) / 2;
@@ -160,7 +160,7 @@ int main() {
     cout << "\n\n";
     
 
-    //Êîïèè ìàññèâà äëÿ ğàçíûõ ñîğòèğîâîê
+    //ĞšĞ¾Ğ¿Ğ¸Ğ¸ Ğ¼Ğ°ÑÑĞ¸Ğ²Ğ° Ğ´Ğ»Ñ Ñ€Ğ°Ğ·Ğ½Ñ‹Ñ… ÑĞ¾Ñ€Ñ‚Ğ¸Ñ€Ğ¾Ğ²Ğ¾Ğº
     int arr1[N];
     for (int a = 0; a < N; a++) {
         arr1[a] = arr[a];
@@ -275,8 +275,8 @@ int main() {
     
     //3
 
-    //Íåîòñîğòèğîâàííûé:
-    // Ïîèñê ìàêñèìàëüíîãî ıëåìåíòà
+    //ĞĞµĞ¾Ñ‚ÑĞ¾Ñ€Ñ‚Ğ¸Ñ€Ğ¾Ğ²Ğ°Ğ½Ğ½Ñ‹Ğ¹:
+    // ĞŸĞ¾Ğ¸ÑĞº Ğ¼Ğ°ĞºÑĞ¸Ğ¼Ğ°Ğ»ÑŒĞ½Ğ¾Ğ³Ğ¾ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ°
     begin = steady_clock::now();
     int max = arr[0];
     for (int j = 1; j < N; ++j) {
@@ -289,7 +289,7 @@ int main() {
     auto timeUnsortedMax = duration_cast<nanoseconds>(end - begin);
     cout << "The time UnsortedMax: " << timeUnsortedMax.count() << " nanoseconds\n\n";
 
-    // Ïîèñê ìèíèìàëüíîãî ıëåìåíòà
+    // ĞŸĞ¾Ğ¸ÑĞº Ğ¼Ğ¸Ğ½Ğ¸Ğ¼Ğ°Ğ»ÑŒĞ½Ğ¾Ğ³Ğ¾ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ°
     begin = steady_clock::now();
     int min = arr[0];
     for (int j = 1; j < N; ++j) {
@@ -302,8 +302,8 @@ int main() {
     auto timeUnsortedMin = duration_cast<nanoseconds>(end - begin);
     cout << "The time UnsortedMin: " << timeUnsortedMin.count() << " nanoseconds\n\n";
 
-    //Îòñîğòèğîâàííûé:
-    // Ïîèñê ìàêñèìàëüíîãî ıëåìåíòà
+    //ĞÑ‚ÑĞ¾Ñ€Ñ‚Ğ¸Ñ€Ğ¾Ğ²Ğ°Ğ½Ğ½Ñ‹Ğ¹:
+    // ĞŸĞ¾Ğ¸ÑĞº Ğ¼Ğ°ĞºÑĞ¸Ğ¼Ğ°Ğ»ÑŒĞ½Ğ¾Ğ³Ğ¾ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ°
     begin = steady_clock::now();
     int maxS = arr1[N-1];
     end = steady_clock::now();
@@ -311,7 +311,7 @@ int main() {
     auto timeSortedMax = duration_cast<nanoseconds>(end - begin);
     cout << "The time SortedMax: " << timeSortedMax.count() << " nanoseconds\n\n";
 
-    // Ïîèñê ìèíèìàëüíîãî ıëåìåíòà
+    // ĞŸĞ¾Ğ¸ÑĞº Ğ¼Ğ¸Ğ½Ğ¸Ğ¼Ğ°Ğ»ÑŒĞ½Ğ¾Ğ³Ğ¾ ÑĞ»ĞµĞ¼ĞµĞ½Ñ‚Ğ°
     begin = steady_clock::now();
     int minS = arr1[0];
     end = steady_clock::now();
@@ -323,7 +323,7 @@ int main() {
 
     //4
     
-    //Íåîòñîğòèğîâàííûé:
+    //ĞĞµĞ¾Ñ‚ÑĞ¾Ñ€Ñ‚Ğ¸Ñ€Ğ¾Ğ²Ğ°Ğ½Ğ½Ñ‹Ğ¹:
     begin = steady_clock::now();
     float f = 2;
     float UnsortedSr = (max + min)/f;
@@ -345,8 +345,8 @@ int main() {
     auto timeUnsortedSr = duration_cast<microseconds>(end - begin);
     cout << "\nThe time UnsortedSr: " << timeUnsortedSr.count() << " microseconds\n\n";
 
-    //×åğåç áèíàğíûé ïîèñê ñäåëàòü òàê, ÷òîáû â îòñîğò. íå ïåğåáèğàòü âñå
-    //Oòñîğòèğîâàííûé:
+    //Ğ§ĞµÑ€ĞµĞ· Ğ±Ğ¸Ğ½Ğ°Ñ€Ğ½Ñ‹Ğ¹ Ğ¿Ğ¾Ğ¸ÑĞº ÑĞ´ĞµĞ»Ğ°Ñ‚ÑŒ Ñ‚Ğ°Ğº, Ñ‡Ñ‚Ğ¾Ğ±Ñ‹ Ğ² Ğ¾Ñ‚ÑĞ¾Ñ€Ñ‚. Ğ½Ğµ Ğ¿ĞµÑ€ĞµĞ±Ğ¸Ñ€Ğ°Ñ‚ÑŒ Ğ²ÑĞµ
+    //OÑ‚ÑĞ¾Ñ€Ñ‚Ğ¸Ñ€Ğ¾Ğ²Ğ°Ğ½Ğ½Ñ‹Ğ¹:
     begin = steady_clock::now();
     float SortedSr = (maxS + minS) / f;
     cout << "SortedSr: " << SortedSr << "\n";
@@ -456,7 +456,7 @@ int main() {
     
 
 
-    //18 ÈÄÇ
+    //18 Ğ˜Ğ”Ğ—
     int u = 0, d = 0;
     int arrU[N], arrD[N];
     for (int a = 0; a < N; a++) {
